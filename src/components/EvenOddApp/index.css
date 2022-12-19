@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bg-container {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  text-align: center;
+  font-family: 'Roboto';
+  background-image: linear-gradient(to bottom, #ff6e7f, #bfe9ff);
+  border-style: none;
+  border-radius: 15px;
+  padding: 50px 10px 50px 10px;
+  width: 50%;
+}
+.heading {
+  color: #0f172a;
+  font-size: 32px;
+  margin: 50px;
+}
+.even-odd-text {
+  color: #334155;
+  font-size: 24px;
+}
+.btn {
+  background-color: #fff;
+  color: #1e293b;
+  padding: 10px 30px 10px 30px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-weight: 400;
+}
+.note {
+  color: #334155;
+  font-size: 12px;
+}
