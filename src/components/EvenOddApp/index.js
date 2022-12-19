@@ -5,24 +5,15 @@ class EvenOddApp extends Component {
   state = {isNumber: 0}
 
   getRandomNumber = () => {
-    const {isNumber} = this.state
     const ranNum = Math.random() * 100
     const ceilNum = Math.ceil(ranNum)
     this.setState(prevState => ({isNumber: prevState.isNumber + ceilNum}))
-    console.log(isNumber)
-  }
-
-  getEvenOdd = a => {
-    if (a / 2 === 0) {
-      return 'Even'
-    }
-    return 'Odd'
   }
 
   render() {
     const {isNumber} = this.state
     const countNumber = isNumber
-    const evenOddText = this.getEvenOdd(countNumber)
+    const evenOddText = countNumber % 2 === 0 ? 'Even' : 'Odd'
 
     return (
       <div className="bg-container">
